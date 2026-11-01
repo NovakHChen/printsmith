@@ -1,0 +1,27 @@
+# Printsmith
+
+Personal 3D printing projects for an Original Prusa MK4S with a 0.4 mm high-flow nozzle, primarily using PLA.
+
+Each project lives in its own folder at the repository root. Project folders contain editable CAD source, STEP and STL exports, a preview, and design/printing notes. Previous revisions live in a project's `archive/` folder.
+
+## Projects
+
+| Project | Description | Current revision |
+| --- | --- | --- |
+| [Device Dock](device-dock/README.md) | Three-slot vertical holder for a MacBook, cased iPad, and cased Kindle | v2 — 19 / 12 / 19 mm |
+
+See [PRINTER.md](PRINTER.md) for the printer setup.
+
+## CAD environment
+
+Use Python 3.12 and a local virtual environment:
+
+```sh
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python device-dock/design.py
+python device-dock/render_preview.py
+```
+
+Model dimensions use millimeters. Keep source, STEP, STL, and preview files together, and regenerate exports after changing a design. `.3mf` slicer projects may be kept alongside the corresponding revision. Machine G-code is ignored by default because it depends on the selected printer, material, and slicing settings. The original Device Dock print's binary G-code is retained explicitly in its v1 archive for provenance.

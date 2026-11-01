@@ -1,0 +1,80 @@
+{
+  "revision": 2,
+  "units": "mm",
+  "base": [
+    104.0,
+    120.0,
+    8.0
+  ],
+  "wall_thickness": 6.0,
+  "wall_heights_above_floor": [
+    64.0,
+    64.0,
+    46.0,
+    34.0
+  ],
+  "wall_lengths": [
+    100.0,
+    100.0,
+    92.0,
+    84.0
+  ],
+  "slots": [
+    {
+      "device": "MacBook Pro 14",
+      "x_min": -31.0,
+      "x_max": -12.0,
+      "gap_mm": 19.0,
+      "center_x": -21.5,
+      "assumed_device_thickness_mm": 15.5,
+      "raw_total_clearance_mm": 3.5,
+      "fit_basis": "Original 19 mm laptop opening retained",
+      "minimum_wall_height_mm": 64.0
+    },
+    {
+      "device": "iPad Pro 11 with case",
+      "x_min": -6.0,
+      "x_max": 6.0,
+      "gap_mm": 12.0,
+      "center_x": 0.0,
+      "assumed_device_thickness_mm": null,
+      "raw_total_clearance_mm": null,
+      "fit_basis": "Owner reports the original 12 mm Kindle opening fits the cased iPad",
+      "minimum_wall_height_mm": 46.0
+    },
+    {
+      "device": "Kindle Paperwhite with case",
+      "x_min": 12.0,
+      "x_max": 31.0,
+      "gap_mm": 19.0,
+      "center_x": 21.5,
+      "assumed_device_thickness_mm": null,
+      "raw_total_clearance_mm": null,
+      "fit_basis": "Owner reports the original 19 mm MacBook opening fits the cased Kindle",
+      "minimum_wall_height_mm": 34.0
+    }
+  ],
+  "validation": {
+    "solid_valid": true,
+    "solid_count": 1,
+    "STEP_round_trip_passed": true,
+    "nominal_slot_gauges_passed": true,
+    "bounding_box_mm": [
+      104.0,
+      120.0,
+      72.0
+    ],
+    "solid_volume_cm3": 208.8103564056664,
+    "note": "Geometric checks only; physical fit and loaded stability require a prototype.",
+    "meshes": {
+      "device_dock_v2.stl": {
+        "boundary_and_nonmanifold_edge_count": 0,
+        "connected_components": 1
+      },
+      "fit_coupon_v2.stl": {
+        "boundary_and_nonmanifold_edge_count": 0,
+        "connected_components": 1
+      }
+    }
+  }
+}

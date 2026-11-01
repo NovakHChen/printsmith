@@ -1,0 +1,67 @@
+{
+  "units": "mm",
+  "base": [
+    104.0,
+    120.0,
+    8.0
+  ],
+  "wall_thickness": 6.0,
+  "wall_heights_above_floor": [
+    64.0,
+    64.0,
+    46.0,
+    34.0
+  ],
+  "wall_lengths": [
+    100.0,
+    100.0,
+    92.0,
+    84.0
+  ],
+  "slots": [
+    {
+      "device": "MacBook Pro 14",
+      "x_min": -26.0,
+      "x_max": -7.0,
+      "gap_mm": 19.0,
+      "center_x": -16.5,
+      "assumed_device_thickness_mm": 15.5,
+      "raw_total_clearance_mm": 3.5,
+      "minimum_wall_height_mm": 64.0
+    },
+    {
+      "device": "iPad Pro 11",
+      "x_min": -1.0,
+      "x_max": 8.0,
+      "gap_mm": 9.0,
+      "center_x": 3.5,
+      "assumed_device_thickness_mm": 5.9,
+      "raw_total_clearance_mm": 3.0999999999999996,
+      "minimum_wall_height_mm": 46.0
+    },
+    {
+      "device": "Kindle Paperwhite",
+      "x_min": 14.0,
+      "x_max": 26.0,
+      "gap_mm": 12.0,
+      "center_x": 20.0,
+      "assumed_device_thickness_mm": 9.2,
+      "raw_total_clearance_mm": 2.8000000000000007,
+      "minimum_wall_height_mm": 34.0
+    }
+  ],
+  "validation": {
+    "solid_valid": true,
+    "solid_count": 1,
+    "STEP_round_trip_passed": true,
+    "nominal_slot_gauges_passed": true,
+    "bounding_box_mm": [
+      104.0,
+      120.0,
+      72.0
+    ],
+    "solid_volume_cm3": 208.8103564056664,
+    "note": "Geometric checks only; physical fit and loaded stability require a prototype.",
+    "STL_boundary_and_nonmanifold_edge_count": 0
+  }
+}

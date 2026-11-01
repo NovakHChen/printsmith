@@ -1,0 +1,7 @@
+# CAD/slicer exports are regenerated from source, not line-merged.
+*.step binary
+*.stp binary
+*.stl binary
+*.3mf binary
+*.bgcode binary
+*.png binary
