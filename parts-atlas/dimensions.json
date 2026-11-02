@@ -1,0 +1,193 @@
+{
+  "case": {
+    "watertight": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      168.0,
+      116.0,
+      48.4
+    ],
+    "volume_cm3": 118.338,
+    "triangles": 574,
+    "fits_MK4S_250x210x220": true
+  },
+  "lid": {
+    "watertight": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      163.6,
+      112.2,
+      3.59
+    ],
+    "volume_cm3": 43.723,
+    "triangles": 1580,
+    "fits_MK4S_250x210x220": true
+  },
+  "bin-small": {
+    "watertight": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      53.2,
+      53.2,
+      40.0
+    ],
+    "volume_cm3": 20.08,
+    "triangles": 524,
+    "fits_MK4S_250x210x220": true
+  },
+  "bin-double": {
+    "watertight": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      107.2,
+      53.2,
+      40.0
+    ],
+    "volume_cm3": 33.142,
+    "triangles": 508,
+    "fits_MK4S_250x210x220": true
+  },
+  "fit-rail": {
+    "watertight": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      168.0,
+      18.0,
+      48.4
+    ],
+    "volume_cm3": 12.07,
+    "triangles": 60,
+    "fits_MK4S_250x210x220": true
+  },
+  "fit-slider": {
+    "watertight": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      163.6,
+      18.0,
+      2.4
+    ],
+    "volume_cm3": 7.024,
+    "triangles": 196,
+    "fits_MK4S_250x210x220": true
+  },
+  "bill_of_materials": {
+    "case": 4,
+    "lid": 4,
+    "bin-small": 14,
+    "bin-double": 5
+  },
+  "units": "mm",
+  "all_nominal_fit_and_slide_collision_checks_passed": true,
+  "nominal_bin_to_lid_gap_mm": 0.4,
+  "layout": [
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ]
+  ],
+  "material_volume_cm3": 1095.1,
+  "fully_solid_PLA_mass_g_at_1_24": 1358,
+  "physical_fit_tested": false,
+  "closure": "Sliding lid; external elastic/strap required for transport",
+  "printer_config_source": "../PRINTER.md"
+}

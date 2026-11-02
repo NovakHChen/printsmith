@@ -2,19 +2,20 @@
 
 Personal 3D printing projects for an Original Prusa MK4S with a 0.4 mm high-flow nozzle, primarily using PLA.
 
-Each project lives in its own folder at the repository root. Project folders contain editable CAD source, STEP and STL exports, a preview, and design/printing notes. Previous revisions live in a project's `archive/` folder.
+Each project lives in its own folder at the repository root. Project folders contain editable CAD source, STL exports, a preview, and design/printing notes. STEP solids are included where available. Previous revisions live in a project's `archive/` folder.
 
 ## Projects
 
 | Project | Description | Current revision |
 | --- | --- | --- |
 | [Device Dock](device-dock/README.md) | Three-slot vertical holder for a MacBook, cased iPad, and cased Kindle | v2 — 19 / 12 / 19 mm |
+| [Parts Atlas](parts-atlas/README.md) | Four independent cases with 19 removable bins and sliding lids | v1 prototype — physical fit untested |
 
 See [PRINTER.md](PRINTER.md) for the printer setup.
 
 ## CAD environment
 
-Use Python 3.12 and a local virtual environment:
+Use Python 3.12 and a local virtual environment. The root requirements below are for Device Dock; Parts Atlas has its own requirements and regeneration commands in its project README.
 
 ```sh
 python3.12 -m venv .venv

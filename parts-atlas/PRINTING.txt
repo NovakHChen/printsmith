@@ -1,0 +1,81 @@
+PARTS ATLAS — v1 prototype
+
+Printer: Original Prusa MK4S, installed 0.4 mm high-flow nozzle.
+Primary material: PLA. Slicer: PrusaSlicer. Units: millimeters.
+Saved printer reference: ../PRINTER.md
+Filament brand, PLA variant and temperature preferences are not recorded.
+
+DESIGN
+Four independent 168 x 116 x 48.4 mm cases. Four cases arranged edge-to-edge
+occupy 336 x 232 mm. They do not mechanically connect to each other.
+This is a smaller reinterpretation of the reference organizer, not a replica.
+Each case has a 3 x 2 layout on a 54 mm pitch, rounded removable bins,
+internal label/grip ledges, a recessed case label and a sliding opaque lid.
+Colors are suggestions. Print whole parts separately in any available filament;
+no multi-material unit or filament changes within a part are required.
+
+FULL SET (27 printed pieces, plus optional transport bands)
+4 x case.stl
+4 x lid.stl
+14 x bin-small.stl (53.2 x 53.2 x 40 mm outside)
+5 x bin-double.stl (107.2 x 53.2 x 40 mm outside)
+
+Cases A, B and C: one double bin and four small bins per case.
+  Back:   [ small ][ small ][ small ]
+  Front:  [    double     ][ small ]
+Case D: two double bins and two small bins.
+  Back:   [    double     ][ small ]
+  Front:  [    double     ][ small ]
+Ledges face the back of each bin. The lid enters from the front, over the
+lower front wall, and stops against the back wall.
+
+FIT SAMPLE FIRST
+Print one fit-rail.stl and one fit-slider.stl, flat as supplied. The open rail
+sample is 168 x 18 x 48.4 mm and checks both rails at their full spacing.
+The slider is 163.6 x 18 x 2.4 mm. Slide it between the rails along the short
+18 mm direction. Remove any first-layer flare before judging the fit.
+Target: easy hand sliding with no binding; the roof should retain the slider.
+Next, print one case, one lid and one small bin before producing the full set.
+The short coupon does not reproduce full-length lid bow or long-track friction.
+
+SLICING START POINT
+Use the MK4S profile matching the installed 0.4 mm high-flow nozzle, and
+the PLA profile matching the actual spool. Import at 100% scale in mm.
+0.20 mm layers, 3 perimeters, 5 top/bottom solid layers, 15% gyroid infill.
+These are proposed starting settings, not measured successful settings.
+All supplied meshes lie flat at Z=0; keep case/bin openings facing upward.
+Print lids smooth face down, grip ribs up. Print components separately.
+Geometry is intended for printing without supports: rail roofs are 45 degrees,
+and the bin ledges have sloped undersides. Check PrusaSlicer's layer preview.
+The small bin floor is 1.8 mm thick; the case floor is 2.4 mm.
+Use a brim only if the first PLA prototype shows corner lift.
+
+TRANSPORT AND FIT LIMITS
+There is no positive lid latch. Use a snug elastic band or reusable strap
+around each closed case front-to-back before carrying it. No straps are included.
+The 0.4 mm nominal vertical gap above the bins is unsealed; very fine pieces
+can migrate between bins. Check a loaded prototype with the smallest intended
+contents before transport. Neither spill resistance nor loaded durability has
+been physically validated. FDM lids are opaque; the model does not imply a
+clear printed lid or include a laser-cut lid.
+
+GEOMETRY CHECKS COMPLETED
+All six STL types are closed, consistently oriented meshes; each source part
+is one solid, and each export was reimported and checked for watertightness.
+All individual parts fit within a nominal MK4S 250 x 210 x 220 mm build volume.
+Nominal bin/case, bin/bin and bin/lid intersections are zero. The lid clears
+the case at five sampled slide positions. These checks do not measure print
+tolerances, full swept-motion interference, friction or material behavior.
+The full set encloses about 1,095 cm3 of modeled solid material (about 1.36 kg
+at 1.24 g/cm3 if printed fully solid). Actual use/time must come from slicing.
+No machine G-code or printer-ready bgcode has been generated.
+
+EDITING / REGENERATING
+design.py is the parameterized geometry source; dimensions.json records the
+export checks and quantities. This revision includes STL, not STEP exports.
+In a Python virtual environment: pip install -r requirements.txt
+Then: python design.py
+
+REFERENCE
+https://www.amazon.com/dp/B08RZMKC9K
+https://www.prusa3d.com/product/original-prusa-mk4s-3d-printer-kit/
