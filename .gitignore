@@ -8,3 +8,4 @@ __pycache__/
 *.gcode
 *.bgcode
 !device-dock/archive/v1/ripple_dock.bgcode
+!parts-atlas/print-plates/*.bgcode

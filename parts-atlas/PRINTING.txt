@@ -20,6 +20,28 @@ FULL SET (27 printed pieces, plus optional transport bands)
 14 x bin-small.stl (53.2 x 53.2 x 40 mm outside)
 5 x bin-double.stl (107.2 x 53.2 x 40 mm outside)
 
+PREARRANGED PRINT PLATES — NO MANUAL STL ASSEMBLY NEEDED
+Each file below is provided as both a PrusaSlicer .3mf project and a sliced
+.bgcode file in print-plates/. Open the .3mf as a project to load the whole plate.
+Individual STLs remain the source parts and are supplied separately above.
+
+00-fit-sample: one rail + one slider. Print once first.
+01-case-print-4x: one case. Print this plate 4 times.
+02-kit-abc-print-3x: one lid + four small bins + one double bin.
+  Print this plate 3 times, once in each kit color if desired.
+03-kit-d-print-1x: one lid + two small bins + two double bins. Print once.
+The full set is 8 plate runs, plus the sample. All parts remain independently
+editable in the project files. See print-plates/plate-layouts.svg for positions.
+
+EMBEDDED PRINTER / MATERIAL SETTINGS
+Original Prusa MK4S, 0.4 mm high-flow nozzle, 250 x 210 mm bed, 220 mm height.
+Official Generic PLA @MK4S HF0.4 preset: 230 C first layer, 225 C thereafter,
+60 C bed. Layer height 0.20 mm; 3 perimeters; 5 top/bottom layers; 15% gyroid;
+supports, brim and sequential printing off. These are the settings used to
+slice the supplied BGCODE. If the spool needs another filament profile, change
+it in the prearranged .3mf and reslice; the arrangement is already complete.
+mk4s-pla.ini contains the settings. The files have not been physically printed.
+
 Cases A, B and C: one double bin and four small bins per case.
   Back:   [ small ][ small ][ small ]
   Front:  [    double     ][ small ]
@@ -68,13 +90,20 @@ the case at five sampled slide positions. These checks do not measure print
 tolerances, full swept-motion interference, friction or material behavior.
 The full set encloses about 1,095 cm3 of modeled solid material (about 1.36 kg
 at 1.24 g/cm3 if printed fully solid). Actual use/time must come from slicing.
-No machine G-code or printer-ready bgcode has been generated.
+Prepared .3mf projects and sliced .bgcode files are supplied in print-plates/.
+The plate projects were checked for object counts, unchanged placement, bed
+margin and at least 6 mm between parts. All plates were successfully sliced
+with the embedded MK4S high-flow settings. See print-plates/manifest.json.
 
 EDITING / REGENERATING
 design.py is the parameterized geometry source; dimensions.json records the
 export checks and quantities. This revision includes STL, not STEP exports.
 In a Python virtual environment: pip install -r requirements.txt
 Then: python design.py
+This exports the individual STLs first, then runs make_print_plates.py to build
+the prearranged .3mf projects and sliced .bgcode files. PrusaSlicer is required;
+set PRUSASLICER to its executable if automatic discovery does not find it.
+To regenerate only the plates: python make_print_plates.py
 
 REFERENCE
 https://www.amazon.com/dp/B08RZMKC9K

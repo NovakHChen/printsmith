@@ -1,11 +1,14 @@
 """Parts Atlas v1. Millimeters. Generate closed STL meshes and preview data.
 
-Requires numpy, manifold3d and trimesh. Run: python design.py
+Requires numpy, manifold3d, trimesh and PrusaSlicer. Run: python design.py
+Exports individual STL files first, then prepared 3MF/BGCODE print plates.
 Printer reference: ../PRINTER.md
 This is a prototype; validate the rail coupon before printing four cases.
 """
 from pathlib import Path
 import json
+import subprocess
+import sys
 import numpy as np
 import manifold3d as m
 import trimesh
@@ -163,4 +166,6 @@ def build():
     print(json.dumps(report,indent=2))
 
 
-if __name__=='__main__': build()
+if __name__=='__main__':
+    build()
+    subprocess.run([sys.executable,str(OUT/'make_print_plates.py')],check=True)

@@ -11,7 +11,7 @@ Each project lives in its own folder at the repository root. Project folders con
 | [Device Dock](device-dock/README.md) | Three-slot vertical holder for a MacBook, cased iPad, and cased Kindle | v2 — 19 / 12 / 19 mm |
 | [Parts Atlas](parts-atlas/README.md) | Four independent cases with 19 removable bins and sliding lids | v1 prototype — physical fit untested |
 
-See [PRINTER.md](PRINTER.md) for the printer setup.
+See [PRINTER.md](PRINTER.md) for the printer setup. New and revised designs must include individual STL exports plus prearranged PrusaSlicer `.3mf` plates covering the required quantities. Include sliced `.bgcode` files when PrusaSlicer is available. Use the MK4S and its 250 × 210 mm bed until the owner changes the setup; see [AGENTS.md](AGENTS.md).
 
 ## CAD environment
 
@@ -25,4 +25,4 @@ python device-dock/design.py
 python device-dock/render_preview.py
 ```
 
-Model dimensions use millimeters. Keep source, STEP, STL, and preview files together, and regenerate exports after changing a design. `.3mf` slicer projects may be kept alongside the corresponding revision. Machine G-code is ignored by default because it depends on the selected printer, material, and slicing settings. The original Device Dock print's binary G-code is retained explicitly in its v1 archive for provenance.
+Model dimensions use millimeters. Keep source, STEP, STL, and preview files together, and regenerate exports after changing a design. `.3mf` slicer projects may be kept alongside the corresponding revision. Machine G-code is ignored by default because it depends on the selected printer, material, and slicing settings. Parts Atlas explicitly tracks its current `.bgcode` plates alongside the `.3mf` projects and the configuration used to slice them. The original Device Dock print's binary G-code is retained explicitly in its v1 archive for provenance.

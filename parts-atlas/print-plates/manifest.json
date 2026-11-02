@@ -1,0 +1,232 @@
+{
+  "printer": "Original Prusa MK4S",
+  "nozzle": "0.4 mm high-flow",
+  "bed_mm": [
+    250,
+    210
+  ],
+  "material_profile": "Generic PLA @MK4S HF0.4",
+  "layer_height_mm": 0.2,
+  "sequential_printing": false,
+  "plates": [
+    {
+      "name": "00-fit-sample",
+      "print_count": 1,
+      "sample_only": true,
+      "object_count": 2,
+      "parts_per_plate": {
+        "fit-rail": 1,
+        "fit-slider": 1
+      },
+      "minimum_part_gap_mm": 8.0,
+      "minimum_bed_edge_margin_mm": 41.0,
+      "placement_round_trip_passed": true,
+      "slicing_succeeded": true,
+      "project_sha256": "4c1441e23c3f31c76b066384f8ad5da7b2ae3e6959f81f2f38bf3e8a2f62a782",
+      "bgcode_sha256": "55ad7556b55d5130afe9d5221232c6ff7a5cedd502e142ac536b61599cdefde8",
+      "positions": [
+        {
+          "part": "fit-rail",
+          "x_mm": 41,
+          "y_mm": 83,
+          "rotation_deg": 0
+        },
+        {
+          "part": "fit-slider",
+          "x_mm": 43.2,
+          "y_mm": 109,
+          "rotation_deg": 0
+        }
+      ],
+      "slicer_log_summary": [
+        "45 => Making infill",
+        "45 => Making infill",
+        "65 => Searching support spots",
+        "65 => Searching support spots",
+        "69 => Alert if supports needed",
+        "88 => Estimating curled extrusions",
+        "88 => Estimating curled extrusions",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "88 => Generating skirt and brim",
+        "90 => Exporting G-code to <temporary>/00-fit-sample.bgcode",
+        "Slicing result exported to <temporary>/00-fit-sample.bgcode"
+      ]
+    },
+    {
+      "name": "01-case-print-4x",
+      "print_count": 4,
+      "sample_only": false,
+      "object_count": 1,
+      "parts_per_plate": {
+        "case": 1
+      },
+      "minimum_part_gap_mm": null,
+      "minimum_bed_edge_margin_mm": 41.0,
+      "placement_round_trip_passed": true,
+      "slicing_succeeded": true,
+      "project_sha256": "73ab88684521578314bfe15ca479fb92e8e07515cd4f879caed48f98c8fd9dd5",
+      "bgcode_sha256": "7aa1446e240e856cd1b697460d7429eb58e2210871b1d1fe131284ec4baadf24",
+      "positions": [
+        {
+          "part": "case",
+          "x_mm": 41,
+          "y_mm": 47,
+          "rotation_deg": 0
+        }
+      ],
+      "slicer_log_summary": [
+        "10 => Processing triangulated mesh",
+        "20 => Generating perimeters",
+        "30 => Preparing infill",
+        "45 => Making infill",
+        "65 => Searching support spots",
+        "69 => Alert if supports needed",
+        "88 => Estimating curled extrusions",
+        "89 => Calculating overhanging perimeters",
+        "88 => Generating skirt and brim",
+        "90 => Exporting G-code to <temporary>/01-case-print-4x.bgcode",
+        "Slicing result exported to <temporary>/01-case-print-4x.bgcode"
+      ]
+    },
+    {
+      "name": "02-kit-abc-print-3x",
+      "print_count": 3,
+      "sample_only": false,
+      "object_count": 6,
+      "parts_per_plate": {
+        "lid": 1,
+        "bin-double": 1,
+        "bin-small": 4
+      },
+      "minimum_part_gap_mm": 6.0,
+      "minimum_bed_edge_margin_mm": 8.7,
+      "placement_round_trip_passed": true,
+      "slicing_succeeded": true,
+      "project_sha256": "fac7d4c9bf9a43bfa59f30bf06d58b665cea9d59748d98d28869381e77428b2f",
+      "bgcode_sha256": "6b35895ba99ea1575f2cee89b463097bc4eaba01432fe914f1915072f4c077df",
+      "positions": [
+        {
+          "part": "lid",
+          "x_mm": 8.7,
+          "y_mm": 23.2,
+          "rotation_deg": 90
+        },
+        {
+          "part": "bin-double",
+          "x_mm": 131.5,
+          "y_mm": 19.2,
+          "rotation_deg": 0
+        },
+        {
+          "part": "bin-small",
+          "x_mm": 128.9,
+          "y_mm": 78.4,
+          "rotation_deg": 0
+        },
+        {
+          "part": "bin-small",
+          "x_mm": 188.1,
+          "y_mm": 78.4,
+          "rotation_deg": 0
+        },
+        {
+          "part": "bin-small",
+          "x_mm": 128.9,
+          "y_mm": 137.6,
+          "rotation_deg": 0
+        },
+        {
+          "part": "bin-small",
+          "x_mm": 188.1,
+          "y_mm": 137.6,
+          "rotation_deg": 0
+        }
+      ],
+      "slicer_log_summary": [
+        "88 => Estimating curled extrusions",
+        "88 => Estimating curled extrusions",
+        "88 => Estimating curled extrusions",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "88 => Generating skirt and brim",
+        "90 => Exporting G-code to <temporary>/02-kit-abc-print-3x.bgcode",
+        "Slicing result exported to <temporary>/02-kit-abc-print-3x.bgcode"
+      ]
+    },
+    {
+      "name": "03-kit-d-print-1x",
+      "print_count": 1,
+      "sample_only": false,
+      "object_count": 5,
+      "parts_per_plate": {
+        "lid": 1,
+        "bin-double": 2,
+        "bin-small": 2
+      },
+      "minimum_part_gap_mm": 6.0,
+      "minimum_bed_edge_margin_mm": 8.7,
+      "placement_round_trip_passed": true,
+      "slicing_succeeded": true,
+      "project_sha256": "a85674abdd40265d23cb12a35fc475d46e39e2c1fd97b7f43408841f66b56dc3",
+      "bgcode_sha256": "fea6d309d015ba899b30cce3528c217267f669ae17621ffa3a1e1e343e32cc14",
+      "positions": [
+        {
+          "part": "lid",
+          "x_mm": 8.7,
+          "y_mm": 23.2,
+          "rotation_deg": 90
+        },
+        {
+          "part": "bin-double",
+          "x_mm": 131.5,
+          "y_mm": 19.2,
+          "rotation_deg": 0
+        },
+        {
+          "part": "bin-double",
+          "x_mm": 131.5,
+          "y_mm": 78.4,
+          "rotation_deg": 0
+        },
+        {
+          "part": "bin-small",
+          "x_mm": 128.9,
+          "y_mm": 137.6,
+          "rotation_deg": 0
+        },
+        {
+          "part": "bin-small",
+          "x_mm": 188.1,
+          "y_mm": 137.6,
+          "rotation_deg": 0
+        }
+      ],
+      "slicer_log_summary": [
+        "88 => Estimating curled extrusions",
+        "88 => Estimating curled extrusions",
+        "88 => Estimating curled extrusions",
+        "88 => Estimating curled extrusions",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "89 => Calculating overhanging perimeters",
+        "88 => Generating skirt and brim",
+        "90 => Exporting G-code to <temporary>/03-kit-d-print-1x.bgcode",
+        "Slicing result exported to <temporary>/03-kit-d-print-1x.bgcode"
+      ]
+    }
+  ],
+  "full_set_quantities": {
+    "case": 4,
+    "lid": 4,
+    "bin-double": 5,
+    "bin-small": 14
+  },
+  "full_set_print_runs": 8
+}

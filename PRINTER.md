@@ -9,6 +9,8 @@ This document records the current printer setup as a reference for future 3D pri
 | Printer | Original Prusa MK4S |
 | Manufacturer | Prusa Research, Prague, Czech Republic |
 | Installed nozzle | 0.4 mm high-flow nozzle |
+| Build volume | 250 × 210 × 220 mm |
+| Default plate footprint | 250 × 210 mm |
 | Slicer | PrusaSlicer |
 | Primary filament | PLA (used for most prints) |
 | Print file format | `.bgcode` (binary G-code) |
@@ -30,6 +32,10 @@ PrusaSlicer can export `.bgcode` files for printing. See Prusa's [binary G-code 
 PLA is the primary material currently used. For project planning, assume PLA and the installed 0.4 mm high-flow nozzle unless a project specifies otherwise.
 
 The filament brand, product variant, color, and preferred print settings have not yet been recorded.
+
+## Print deliverables
+
+For new and revised work, always export each distinct printable part as its own STL, then provide prearranged PrusaSlicer `.3mf` plate projects with the correct quantities and placement. Include matching sliced `.bgcode` files when the slicer is available. Keep the printer/material configuration and repeat counts with the project so the owner does not need to assemble plates manually. Until the owner requests a change, target the MK4S with the installed 0.4 mm high-flow nozzle and the 250 × 210 mm bed.
 
 ## Workflow reference
 
